@@ -222,3 +222,29 @@ WORDCHARS=''
 ```
 
 I also use [powerlevel10k](https://github.com/romkatv/powerlevel10k) to customize the shell.
+
+---
+# Other commands not covered
+
+```
+ - which
+ - du
+ - df
+ - grep
+ - sed
+ - less
+ - bat
+ - whoami
+ - hostname
+ - zcat
+ - htop
+ - ps
+ ```
+ And many many more!
+
+ ---
+ # Thank you!
+
+ ## Questions?
+
+ ## Comments?
