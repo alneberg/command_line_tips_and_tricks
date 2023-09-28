@@ -6,13 +6,15 @@ theme: default
 # Command Line Tips & Tricks
 ## Johannes Alneberg 2023-09-29
 
+Slides here: https://github.com/alneberg/command_line_tips_and_tricks
 
 
 ---
 # `cd`
 ```shell
 cd ../
-cd # - without arguments
+cd    # - without arguments
+cd ~
 cd -
 ```
 
@@ -43,7 +45,7 @@ ctr+a a
 ```
 
 ---
-# Jump around 2a
+# Jump around 2 - prerequisites
 
 Map meta to opt:
 - vscode:
@@ -92,6 +94,14 @@ If not redirected, they are both printed on the terminal.
 
 - stderr can be redirected with `2>` or `2>>`
 
+- redirect stderr to stdout `2>&1`
+
+- redirect stderr & stdout to the same file `&>` or `&>>`
+
+---
+# Case: tsv to csv convertion
+
+
 ---
 # Case: tsv to csv convertion
 ```shell
@@ -132,6 +142,9 @@ paste file1.csv file2.csv | cut -f 3,5 -d ','
 # Case: reordering columns 
 file1.csv has column 2 and 3 re-ordered.
 
+---
+# Case: reordering columns 
+file1.csv has column 2 and 3 re-ordered.
 ```
 paste file1.csv file1.csv | cut -f 1,3,6,8- -d',' > file1_correct.csv
 mv file1_correct.csv file1.csv
@@ -167,9 +180,10 @@ real-command: cut -f 4 -d',' sandbox/*.csv | sort | uniq -c | sort -n
 # Search history
 Soo useful for repeated commands
 
-`ctrl+r` or `history`
+`ctrl+r`
 
 For fuzzy searching [`fzf`](https://github.com/junegunn/fzf) (thanks Matthias H)
+`history` command is useful for investigating command history
 
 ---
 # dotfiles
@@ -210,7 +224,10 @@ Host miarka
     User alneberg
     ServerAliveInterval 30
 ```
-
+Enables commands like:
+```shell
+scp ngi-preproc:/my_data/path .
+```
 ---
 # `.zprofile`
 
@@ -239,6 +256,8 @@ I also use [powerlevel10k](https://github.com/romkatv/powerlevel10k) to customiz
  - zcat
  - htop
  - ps
+ - xargs
+ - bc
  ```
  And many many more!
 
@@ -248,3 +267,5 @@ I also use [powerlevel10k](https://github.com/romkatv/powerlevel10k) to customiz
  ## Questions?
 
  ## Comments?
+
+ ## Corrections?
