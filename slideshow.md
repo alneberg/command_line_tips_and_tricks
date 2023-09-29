@@ -249,11 +249,13 @@ I also use [powerlevel10k](https://github.com/romkatv/powerlevel10k) to customiz
  - df
  - grep
  - sed
+ - awk
  - less
  - bat
  - whoami
  - hostname
  - zcat
+ - zgrep
  - htop
  - ps
  - xargs
